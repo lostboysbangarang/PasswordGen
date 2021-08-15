@@ -1,0 +1,19 @@
+{
+  "name": "passwordgen",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lostboysbangarang/PasswordGen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lostboysbangarang/PasswordGen/issues"
+  },
+  "homepage": "https://github.com/lostboysbangarang/PasswordGen#readme"
+}

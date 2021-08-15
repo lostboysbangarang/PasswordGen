@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="container blur">
+                
+            </div>
+            <h1>Password Generator</h1>
+        </div>
+        <div class="checkList">
+            <div class="checkList_text">
+
+            </div>
+            <div class="checkList_element">
+                <ul class="checkList_element_list list_caller">
+                    <li class="checkList_element_list item">
+                        <label for="item_box" class="checkList_element_list item_label">Password Length Requirements:</label>
+                        <input type="checkbox" class="checkList_element_list item_box" name="criteria" value="Length">
+                    </li>
+                    <li class="checkList_element_list item">
+                        <label for="item_box" class="checkList_element_list item_label">Special Charecters:</label>
+                        <input type="checkbox" class="checkList_element_list item_box" name="criteria" value="Special Charecters">
+                    </li>
+                </ul>
+            </div>
+            <div class="checkList_element">
+                <ul class="checkList_element_list list_caller">
+                    <li class="checkList_element_list item_0">
+                        <label class="description" for="number">Please select your lowest password length:</label>
+                        <input type="number" class="number" name="number" min="8" max="128">
+                    </li>
+                    <li class="checkList_element_list item_0">
+                        <label class="descriptionII" for="numberII">Please select your maximum password length:</label>
+                        <input type="numberII" class="numberII" name="numberII" min="8" max="128">
+                    </li>
+                </ul>
+            </div>
+            <div class="checkList_element">
+                <ul class="checkList_element_list list_caller">
+                    <li class="checkList_element_list item">
+                        <label class="character" for="item_check">Lowercase Letters:</label>
+                        <input type="checkbox" class="item_check" name="lowercase" value="Lowercase">
+                    </li>
+                    <li class="checkList_element_list item">
+                        <label class="character" for="item_check">Uppercase Letters:</label>
+                        <input type="checkbox" class="item_check" name="uppercase" value="Uppercase">
+                    </li>
+                    <li class="checkList_element_list item">
+                        <label class="character" for="item_check">Special Characters:</label>
+                        <input type="checkbox" class="item_check" name="specialChar" value="Special Charecters">
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="checkList_result"></div>
+        </div>
+        <footer class="footer">
+            <button class="footer_button" data-step="Generate" onclick="buttonClick()"></button>
+        </footer>
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

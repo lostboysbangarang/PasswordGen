@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
+@keyframes initialStep {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    width: 50vw;
+    height: 50vh;
+    opacity: 1;
+  }
+}
+@keyframes elementI {}
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("/resources/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .container {
+  position: absolute;
+  top: 5%;
+  font-size: 1.75vw;
+  border-radius: 3vw;
+}
+.wrapper .container .blur {
+  filter: blur(15px);
+  background-color: rgba(100, 100, 100, 0.5);
+  height: 100%;
+  width: 100%;
+}
+.wrapper .container h1 {
+  position: relative;
+  z-index: 10;
+}
+
+.checkList {
+  background-color: rgba(100, 100, 100, 0.5);
+  height: 50vh;
+  width: 50%;
+  border-radius: 1vw;
+  border: 0.5vw solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.checkList_text {
+  opacity: 0;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+}
+.checkList_element_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.checkList_element_list .item, .checkList_element_list .item_0 {
+  background-color: red;
+  flex-basis: 25%;
+  margin-right: 15%;
+  display: flex;
+  align-items: center;
+}
+.checkList_element_list .item_0, .checkList_element_list .item_0_0 {
+  flex-basis: 50%;
+}
+.checkList_element_list .item .number, .checkList_element_list .item .numberII, .checkList_element_list .item_0 .number, .checkList_element_list .item_0 .numberII {
+  width: 2vw;
+  height: 1vw;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5%;
+  height: 15%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background: #A0A0A0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.footer button.footer_button {
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  color: #382b22;
+  border: 2px solid #404040;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.footer button.footer_button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #606060;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #404040, 0 0.625em 0 0 #A0A0A0;
+  transform: translate3d(0, 0.75em, -1em);
+}
+.footer button.footer_button:hover {
+  background: #909090;
+  transform: translate(0em, 0.25em);
+}
+.footer button.footer_button:hover::before {
+  box-shadow: 0 0 0 2px #404040, 0 0.5em 0 0 #A0A0A0;
+  transform: translate3d(0, 0.5em, -2em);
+}
+.footer button.footer_button:active {
+  background: #909090;
+  transform: translate(0em, 0.75em);
+}
+.footer button.footer_button:active::before {
+  box-shadow: 0 0 0 2px #404040, 0 0.25em 0 0 #A0A0A0;
+  transform: translate3d(0, 0.25em, -1em);
+}
+
+/*# sourceMappingURL=style.css.map */
