@@ -41,7 +41,7 @@ body {
     // background-image: url();
     overflow-x: hidden;
     width: 100vw;
-    
+    font-size: 1.5em;
     margin: 0;
     padding: 0;
     
@@ -115,7 +115,7 @@ body {
             justify-content: space-between;
             list-style: none;
             & .item, .item_0 {
-                background-color: red;
+                // background-color: red;
                 flex-basis: 25%;
                 margin-right: 15%;
                 display: flex;

@@ -15,6 +15,7 @@
 body {
   overflow-x: hidden;
   width: 100vw;
+  font-size: 1.5em;
   margin: 0;
   padding: 0;
   color: white;
@@ -74,7 +75,6 @@ body {
   list-style: none;
 }
 .checkList_element_list .item, .checkList_element_list .item_0 {
-  background-color: red;
   flex-basis: 25%;
   margin-right: 15%;
   display: flex;
